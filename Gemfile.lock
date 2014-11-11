@@ -1,6 +1,26 @@
-GEM
-  remote: http://rubygems.org/
+GIT
+  remote: git@github.com:AEAB/asab-webservice-gem.git
+  revision: 3545261d0f96c636ee54340288ac1239bb436bde
   specs:
+    asab-webservice (2.1.0)
+      nokogiri (= 1.5.3)
+
+GIT
+  remote: git@github.com:AEAB/saml-gem.git
+  revision: 29c7d2f20591662bed417effa1d5c1220374407f
+  specs:
+    saml (0.0.1)
+
+GIT
+  remote: git@github.com:AEAB/xmlsec-gem.git
+  revision: a4da660591b626cac569fa2c16b8703e775856da
+  specs:
+    xmlsec (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    nokogiri (1.5.3)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -14,5 +34,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  asab-webservice!
   rack
+  saml!
   sinatra
+  xmlsec!
